@@ -4,7 +4,7 @@ class CashRegister
  
   
   def initialization(total = 0)
-    
+    @total = total 
     
     @cash_register_with_discount = self.new(20)
  @cash_register = self.new 
