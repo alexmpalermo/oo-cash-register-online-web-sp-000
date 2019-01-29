@@ -32,8 +32,7 @@ def initialize (employee_discount = nil)
   end
  
  
-  def void_last_transaction
-    items[-1]
+  def void_last_transaction(price)
     @total = @total - items[-1].price
   end
   
