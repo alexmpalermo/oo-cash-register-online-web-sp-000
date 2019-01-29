@@ -5,7 +5,7 @@ class CashRegister
   
   def initialization(total = 0)
   @total = total  
-  if self.new(@discount)
+  if self.new
     self.apply_discount
 end 
 end
