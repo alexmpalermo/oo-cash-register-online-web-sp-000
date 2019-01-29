@@ -4,7 +4,7 @@ class CashRegister
 def initialize (employee_discount = nil)
   @total = 0
   @employee_discount = employee_discount
-  @items = []
+  @items = {}
   end
   
   def discount
@@ -18,7 +18,7 @@ def initialize (employee_discount = nil)
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
     quantity.times do
-      @items << title
+      @items[title] << price
     end
   end
   
@@ -33,7 +33,7 @@ def initialize (employee_discount = nil)
  
  
   def void_last_transaction(price)
-    @total = @total - @items[-1](price)
+    @total = @total - @items[
   end
   
   
