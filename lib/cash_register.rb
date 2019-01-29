@@ -7,6 +7,7 @@ class CashRegister
     @total = total 
     
     @cash_register_with_discount = self.new(20)
+    
  @cash_register = self.new 
    
   
