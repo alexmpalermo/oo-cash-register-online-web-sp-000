@@ -8,6 +8,7 @@ class CashRegister
   if @person == @employee
     self.apply_discount
 end 
+end
 
 def add_item(price, title)
   @total 
