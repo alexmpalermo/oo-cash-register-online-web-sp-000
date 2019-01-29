@@ -30,7 +30,8 @@ def initialize (employee_discount = nil)
       "There is no discount to apply."
     end
   end
- end 
+ 
+ 
   def void_last_transaction
   end
   
