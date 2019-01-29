@@ -30,6 +30,10 @@ def initialize (employee_discount = nil)
       "There is no discount to apply."
     end
   end
+  
+  def 
+  
+  
 end 
    
 
