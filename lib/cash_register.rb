@@ -1,14 +1,10 @@
 class CashRegister
-  attr_accessor :cash_register, :cash_register_with_discount, :total, :price, :title
-  
- 
-  
-  def initialization(total = 0)
-    @total = total 
-    
-    @cash_register_with_discount = self.new(20)
-    
- @cash_register = self.new 
+  attr_accessor :total, :employee_discount
+
+def initialize (employee_discount = nil)
+  @total = 0.00
+  @employee_discount = employee_discount
+end 
    
   
 end 
