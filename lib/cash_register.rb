@@ -3,7 +3,7 @@ class CashRegister
   
  
   
-  def initialization(total = 0, person)
+  def initialization(total = 0)
   @total = total  
   if @person == @employee
     self.apply_discount
