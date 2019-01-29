@@ -26,8 +26,8 @@ def initialize (employee_discount = nil)
   
   def apply_discount
     if @employee_discount
-      @total = @total * (1.0 - @employee_discount / 100.0)
-      "After the discount, the total comes to $#{@total}.".chomp(".0")
+      @total = (@total * (1.0 - @employee_discount / 100.0)).chomp(".0")
+      "After the discount, the total comes to $#{@total}."
     else
       "There is no discount to apply."
     end
