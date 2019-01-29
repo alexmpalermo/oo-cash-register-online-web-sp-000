@@ -18,7 +18,7 @@ def initialize (employee_discount = nil)
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
     quantity.times do
-      items << title
+      @items << title
     end
   end
   
@@ -33,7 +33,7 @@ def initialize (employee_discount = nil)
  
  
   def void_last_transaction(price)
-    @total = @total - items[-1].price
+    @total = @total - @items[-1].price
   end
   
   
