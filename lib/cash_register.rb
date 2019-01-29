@@ -1,11 +1,11 @@
 class CashRegister
-  attr_accessor :total, :price, :title, :person, :employee
+  attr_accessor :total, :price, :title, :discount
   
  
   
   def initialization(total = 0)
   @total = total  
-  if @person == @employee
+  if self.new(@discount)
     self.apply_discount
 end 
 end
